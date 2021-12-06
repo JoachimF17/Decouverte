@@ -21,9 +21,7 @@ public class TestTroisPP
         String result = "";
 
         for(String s : tab)
-        {
             result += s;
-        }
 
         return result;
     }
@@ -34,9 +32,7 @@ public class TestTroisPP
         String result = "";
 
         for(String s : tab)
-        {
             result += s;
-        }
 
         return result;
     }
