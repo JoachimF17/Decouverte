@@ -35,13 +35,18 @@ public class Personne
     {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
+
         Personne personne = (Personne) o;
-        return Objects.equals(nom, personne.nom) && Objects.equals(prenom, personne.prenom);
+
+        if (nom != null ? !nom.equals(personne.nom) : personne.nom != null) return false;
+        return prenom != null ? prenom.equals(personne.prenom) : personne.prenom == null;
     }
 
     @Override
     public int hashCode()
     {
-        return Objects.hash(nom, prenom);
+        int result = nom != null ? nom.hashCode() : 0;
+        result = 31 * result + (prenom != null ? prenom.hashCode() : 0);
+        return result;
     }
 }

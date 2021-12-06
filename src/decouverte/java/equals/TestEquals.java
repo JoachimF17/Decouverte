@@ -14,5 +14,11 @@ public class TestEquals
         System.out.println(p1.equals(p3));
         System.out.println(p1.equals(p4));
         System.out.println(p1.equals(p5));
+
+        System.out.println(p1.hashCode());
+        System.out.println(p2.hashCode());
+        System.out.println(p3.hashCode());
+        System.out.println(p4.hashCode());
+        System.out.println(p5.hashCode());
     }
 }
