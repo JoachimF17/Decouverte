@@ -29,12 +29,11 @@ public class TestTroisPP
     //nouvelle methode
     private static String concatNew(String... tab)
     {
-        String result = "";
+        StringBuilder result = new StringBuilder(); //concatenation optimisee
 
         for(String s : tab)
-            result += s;
+            result.append(s);
 
-        return result;
+        return result.toString();
     }
-
 }
