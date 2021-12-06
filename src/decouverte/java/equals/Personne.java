@@ -30,8 +30,7 @@ public class Personne
         return egal;
     }*/
 
-    @Override
-    public boolean equals(Object o)
+    @Override public boolean equals(Object o)
     {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
@@ -42,8 +41,7 @@ public class Personne
         return prenom != null ? prenom.equals(personne.prenom) : personne.prenom == null;
     }
 
-    @Override
-    public int hashCode()
+    @Override public int hashCode()
     {
         int result = nom != null ? nom.hashCode() : 0;
         result = 31 * result + (prenom != null ? prenom.hashCode() : 0);
